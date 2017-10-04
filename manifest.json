@@ -1,0 +1,20 @@
+{
+
+  "description": "Add extra layout options to the Brightspace page of the TU Delft",
+  "manifest_version": 2,
+  "name": "Improve the TUDelft Brightspace page",
+  "version": "1.0",
+  "homepage_url": "https://github.com/RensHam/",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://brightspace.tudelft.nl/*"],
+      "js": ["background.js"]
+    }
+  ]
+
+}
